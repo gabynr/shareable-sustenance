@@ -35,7 +35,7 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 smooth-transition ${
         isScrolled ? 'glass py-3 shadow-sm' : 'bg-transparent py-5'
       }`}
     >
@@ -52,7 +52,7 @@ export function Navbar() {
               <Link
                 key={item.path}
                 to={item.path}
-                className={`px-4 py-2 rounded-md transition-colors ${
+                className={`px-4 py-2 rounded-md smooth-transition ${
                   isActive(item.path)
                     ? 'text-primary font-medium'
                     : 'text-foreground/80 hover:text-foreground hover:bg-secondary'
@@ -96,7 +96,7 @@ export function Navbar() {
                     <Link
                       key={item.path}
                       to={item.path}
-                      className={`px-4 py-2 rounded-md transition-colors ${
+                      className={`px-4 py-2 rounded-md smooth-transition ${
                         isActive(item.path)
                           ? 'text-primary font-medium'
                           : 'text-foreground/80 hover:text-foreground hover:bg-secondary'
