@@ -1,14 +1,23 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import { Navbar } from '@/components/Navbar';
+import { Hero } from '@/components/Hero';
+import { HowItWorks } from '@/components/HowItWorks';
+import { Features } from '@/components/Features';
+import { Footer } from '@/components/Footer';
+import { PageTransition } from '@/components/Motion';
+
+export default function Index() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
+    <PageTransition>
+      <div className="flex min-h-screen flex-col">
+        <Navbar />
+        <main className="flex-1">
+          <Hero />
+          <HowItWorks />
+          <Features />
+        </main>
+        <Footer />
       </div>
-    </div>
+    </PageTransition>
   );
-};
-
-export default Index;
+}
