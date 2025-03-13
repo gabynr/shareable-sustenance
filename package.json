@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://gabynr.github.io/shareable-sustenance.git",
+  "homepage": "https://gabynr.github.io/shareable-sustenance",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
